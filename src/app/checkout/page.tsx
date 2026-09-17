@@ -174,12 +174,14 @@ Thank you! ❤️`;
 
             <p className="mt-3 text-gray-600">
               Your order has been received successfully.
+             <p className="text-xl">Kindly pay via Mobile Money Tel: 0974508241.</p> 
             </p>
 
             {/* Order number */}
             <div className="mt-6 rounded-2xl bg-pink-50 p-4">
               <p className="text-sm text-gray-500">
-                Your Order Number
+                Your Order Number <br></br>
+                <p className="text-xl">Thank you!!</p>
               </p>
 
               <p className="mt-1 break-all font-mono text-sm font-bold text-pink-600">

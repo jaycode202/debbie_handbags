@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ShoppingBag, Search } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import AddToCartButton from "./components/cart/AddToCartButton";
+import Navbar from "./components/Navbar";
+import AppointmentButton from "./components/AppointmentButton";
 
 type Product = {
   id: string;
@@ -32,65 +34,7 @@ export default async function HomePage() {
   return (
     <main className="min-h-screen bg-pink-50">
       {/* Navigation */}
-      <nav className="border-b border-pink-100 bg-white">
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-pink-600">
-              <ShoppingBag className="h-5 w-5 text-white" />
-            </div>
-
-            <div>
-              <h1 className="text-xl font-bold text-pink-600">
-                Debbie's Handbags
-              </h1>
-              <p className="text-xs text-grey-500">
-                Ladies Handbags
-              </p>
-            </div>
-          </Link>
-
-          {/* Navigation */}
-          <div className="hidden items-center gap-8 md:flex">
-            <Link
-              href="/"
-              className="text-sm font-semibold text-pink-600"
-            >
-              Home
-            </Link>
-
-            <a
-              href="#products"
-              className="text-sm font-medium text-gray-600 hover:text-pink-600"
-            >
-              Shop
-            </a>
-
-            <a
-              href="#about"
-              className="text-sm font-medium text-gray-600 hover:text-pink-600"
-            >
-              About
-            </a>
-            <Link
-              href="admin/"
-              className="text-sm font-semibold text-pink-600"
-            >
-              Admin
-            </Link>
-          </div>
-
-          {/* Cart */}
-          <Link
-            href="/cart"
-            className="flex items-center gap-2 rounded-xl border border-pink-200 bg-white px-4 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-pink-400 hover:text-pink-600"
-          >
-            <ShoppingBag className="h-4 w-4" />
-            Cart
-          </Link>
-
-        </div>
-      </nav>
+      <Navbar />
 
      {/* Hero */}
     <section className="px-4 pt-6 sm:px-6 lg:px-10 lg:pt-8">
@@ -215,6 +159,24 @@ export default async function HomePage() {
       </div>
     </section>
 
+    {/* floating whatsapp icon*/}
+      <div className="fixed bottom-5 right-5 z-50">
+        <a
+          href="https://wa.me/+260 974508241"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with us on WhatsApp"
+          className="block transition-transform duration-200 hover:scale-110"
+        >
+          <img
+            src="/whatsapp.png"
+            alt="WhatsApp"
+            className="h-14 w-14 object-contain drop-shadow-lg"
+          />
+        </a>
+      </div>
+    {/* floating phone icon*/}
+      <AppointmentButton />
 
     {/* Products */}
       <section
@@ -364,7 +326,7 @@ export default async function HomePage() {
           Beautiful handbags. Beautiful you.
         </p>
         
-         <h1 className="mt-2 text-sm text-white">
+         <h1 className="mt-2 text-l text-white font-semibold">
           Contact us 
           <p>Tel: +260 974508241 | +260 968193041</p>
         </h1>
