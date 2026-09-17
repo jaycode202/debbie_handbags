@@ -2,7 +2,7 @@
 
 export default function AppointmentButton() {
   const handleCall = () => {
-    window.location.href = "tel:+260779975968";
+    window.location.href = "tel:+260 974508241";
   };
 
   return (
