@@ -37,7 +37,7 @@ export default function AdminLoginPage() {
 
   return (
     <Link href="/" 
-     className="w-full bg-pink-600 hover:bg-pink-700 disabled:bg-pink-300 text-white font-semibold py-3 rounded-xl transition
+     className="w-full bg-pink-600 hover:bg-pink-700 disabled:bg-pink-300 text-white font-semibold py-3 rounded-xl transition"
     > Back to Home page 
     </Link>
     <main className="min-h-screen bg-pink-50 flex items-center justify-center px-4">
