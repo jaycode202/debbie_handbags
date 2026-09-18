@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Lock, Mail, ShoppingBag } from "lucide-react";
 import { supabase } from "@/lib/supabase";
-import { Link} from "next/Link";
+import  Link from "next/link";
 
 export default function AdminLoginPage() {
   const router = useRouter();
