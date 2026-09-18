@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { formatPrice } from "@/lib/currency";
+import Greeting from "./components/Greetings";
 
 const stats = [
   {
@@ -84,7 +85,7 @@ export default function AdminDashboard() {
         {/* Welcome */}
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-gray-900">
-            Good evening 👋
+            <Greeting />
           </h2>
 
           <p className="mt-1 text-gray-500">
