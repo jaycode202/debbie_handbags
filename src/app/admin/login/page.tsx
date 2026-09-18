@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Lock, Mail, ShoppingBag } from "lucide-react";
 import { supabase } from "@/lib/supabase";
-import  Link from "next/link";
+import Link from "next/link";
 
 export default function AdminLoginPage() {
   const router = useRouter();
@@ -36,12 +36,14 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <Link href="/" 
-     className="w-full bg-pink-600 hover:bg-pink-700 disabled:bg-pink-300 text-white font-semibold py-3 rounded-xl transition"
-    > Back to Home page 
-    </Link>
     <main className="min-h-screen bg-pink-50 flex items-center justify-center px-4">
       <div className="w-full max-w-md">
+        
+      <Link href="/" 
+         className="w-full bg-pink-600 hover:bg-pink-700 disabled:bg-pink-300 text-white font-semibold py-3 rounded-xl transition"
+      > Back to Home page 
+      </Link>
+        
         <div className="bg-white rounded-2xl shadow-xl p-8">
           {/* Logo */}
           <div className="flex flex-col items-center mb-8">
