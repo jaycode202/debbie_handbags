@@ -72,7 +72,7 @@ export default function AdminDashboard() {
         </div>
 
         <Link
-          href="admin/(dashboard)/products/page.tsx"
+          href="admin/(dashboard)/products/new"
           className="flex items-center gap-2 rounded-xl bg-pink-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-pink-700"
         >
           <Plus className="h-4 w-4" />
