@@ -132,7 +132,7 @@ export default function AdminLayout({
 
           <div>
             <h1 className="font-bold leading-tight text-gray-900">
-              Debbie Bags
+              Debbie's Handbags 
             </h1>
 
             <p className="text-xs text-gray-500">
