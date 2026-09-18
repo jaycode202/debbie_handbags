@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { formatPrice } from "@/lib/currency";
-import Greeting from "./components/Greetings";
+import Greeting from "./components/Greeting";
 
 const stats = [
   {
